@@ -17,21 +17,39 @@ body {
 header {
     background-color: #5d7ab1;
     color: rgb(24, 21, 21);
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s forwards;
+}
+
+/* Animação de entrada do cabeçalho */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 header .logo h1 {
     margin: 0;
     font-size: 36px;
+    color: white;
 }
 
+/* Navegação do cabeçalho */
 header nav ul {
     list-style-type: none;
+    padding: 0;
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 20px;
 }
 
@@ -39,9 +57,11 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
+    color: #ffcf47;
     text-decoration: underline;
 }
 
@@ -49,22 +69,38 @@ header nav ul li a:hover {
 section {
     padding: 20px;
     margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
 }
 
-section#home {
-    background-color: #fff;
-    text-align: center;
+/* Animação de entrada das seções */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 section h2 {
     font-size: 28px;
     margin-bottom: 10px;
+    color: #333;
 }
 
 /* Lista de cursos */
 section#cursos ul {
     list-style-type: square;
     margin-left: 40px;
+    color: #333;
+}
+
+section#cursos li {
+    margin: 5px 0;
 }
 
 /* Rodapé */
@@ -72,9 +108,80 @@ footer {
     background-color: #548ba5;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s forwards;
 }
 
 footer p {
     font-size: 14px;
+    color: #ddd;
+}
+
+/* Animação do rodapé */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo de links em geral */
+a {
+    color: #5d7ab1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcf47;
+    text-decoration: underline;
+}
+
+/* Botões */
+button {
+    background-color: #5d7ab1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a6696;
+    transform: scale(1.05);
+}
+
+/* Melhorias no input */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #5d7ab1;
+}
+
+/* Estilo para a div de resultados */
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
 }
