@@ -1,68 +1,101 @@
-!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escola ABC</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <h1>Escola ABC</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cursos">Cursos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Seção Home -->
-    <section id="home">
-        <h2>Bem-vindo à Escola ABC</h2>
-        <p>Transformando o futuro através da educação.</p>
-    </section>
-        
-
-    <!-- Seção Cursos -->
-    <section id="cursos">
-        <h2>Cursos Oferecidos</h2>
-        <ul>
-            <li>Ensino Fundamental</li>
-            <li>Ensino Médio</li>
-            <li>Educação Infantil</li>
-        </ul>
-    </section>
-
-    <!-- Seção Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Telefone: (44) 1234-5678</p>
-        <p>Email: contato@escolaabc.com.br</p>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Escola ABC. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Minha Escola</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #005f99;
+      color: white;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .cursos ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cursos li {
+      background: #f4f4f4;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .professores {
+      display: flex;
+      gap: 20px;
+    }
+
+    .professor img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .contato form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+    }
+
+    .contato input, .contato textarea {
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    .contato button {
+      background-color: #005f99;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ddd;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Cabeçalho -->
   <header>
-    <div class="logo">Minha Escola</div>
+    <h1>Minha Escola</h1>
     <nav>
       <ul>
         <li><a href="#home">Início</a></li>
@@ -75,29 +108,32 @@
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <h1>Bem‑vindo à Minha Escola</h1>
+  <!-- Home -->
+  <section id="home">
+    <h2>Bem-vindo à Minha Escola</h2>
     <p>Educação de qualidade e compromisso com o futuro.</p>
-    <a href="#contato" class="btn">Fale conosco</a>
   </section>
 
-  <section id="sobre" class="sobre">
-    <h2>Sobre a Escola</h2>
-    <p>A “Minha Escola” foi fundada em 2005 com o objetivo de oferecer ensino de excelência para nossa comunidade.</p>
+  <!-- Sobre -->
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Fundada em 2005 com o objetivo de oferecer ensino de excelência para nossa comunidade.</p>
     <p>Nossa missão é educar com valores, inovação e cidadania.</p>
   </section>
 
+  <!-- Cursos -->
   <section id="cursos" class="cursos">
     <h2>Cursos Oferecidos</h2>
     <ul>
       <li>Educação Infantil</li>
       <li>Ensino Fundamental</li>
       <li>Ensino Médio</li>
-      <li>Atividades extracurriculares</li>
+      <li>Atividades Extracurriculares</li>
     </ul>
   </section>
 
-  <section id="equipe" class="equipe">
+  <!-- Equipe -->
+  <section id="equipe">
     <h2>Equipe</h2>
     <div class="professores">
       <div class="professor">
@@ -110,228 +146,61 @@
         <h3>Professor B</h3>
         <p>Português</p>
       </div>
-
-      <!-- adicione mais conforme necessário -->
     </div>
   </section>
 
-  <section id="eventos" class="eventos">
+  <!-- Eventos -->
+  <section id="eventos">
     <h2>Eventos & Notícias</h2>
     <div class="evento-item">
       <h3>Feira de Ciências</h3>
-      <p>Data: 20 de novembro de 2025</p>
-      <p>Descrição breve do evento.</p>
+      <p><strong>Data:</strong> 20 de novembro de 2025</p>
+      <p>Evento anual com projetos dos alunos.</p>
     </div>
-
-    <!-- outros eventos -->
   </section>
 
+  <!-- Contato -->
   <section id="contato" class="contato">
-    <h2>Contato</h2>
+    <h2>Fale Conosco</h2>
     <form action="enviar_contato.php" method="post">
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required />
+      <input type="text" id="nome" name="nome" required>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" id="email" name="email" required>
 
       <label for="mensagem">Mensagem:</label>
       <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
       <button type="submit">Enviar</button>
     </form>
-    <p>Telefone: (44) 1234‑5678</p>
-    <p>Endereço: Rua Exemplo, 123, Cidade, Estado</p>
+
+    <div class="info-contato">
+      <p><strong>Telefone:</strong> (44) 1234‑5678</p>
+      <p><strong>Email:</strong> contato@minhaescola.com.br</p>
+      <p><strong>Endereço:</strong> Rua da Educação, 123 - Cidade/UF</p>
+    </div>
   </section>
 
+  <!-- Rodapé -->
   <footer>
     <p>&copy; 2025 Minha Escola. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal de Cursos (HTML puro)</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #005f99;
-      color: white;
-      padding: 20px;
-    }
-    header nav ul {
-      list-style: none;
-      margin: 0; padding: 0;
-    }
-    header nav ul li {
-      display: inline;
-      margin-right: 15px;
-    }
-    header nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-    main {
-      padding: 20px;
-    }
-
-    .curso-lista {
-      list-style: none;
-      padding: 0;
-    }
-    .curso-lista li {
-      background: white;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .curso-lista li:hover {
-      background: #e0e0e0;
-    }
-    .curso-lista li a {
-      text-decoration: none;
-      color: #005f99;
-      font-size: 1.1em;
-    }
-
-    .secao-curso {
-      display: none;
-    }
-    .secao-curso:target {
-      display: block;
-    }
-    #cursos {
-      display: block;
-    }
-
-    .detalhe-curso {
-      background: white;
-      padding: 20px;
-      border-radius: 5px;
-    }
-    .voltar-link {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 15px;
-      background-color: #005f99;
-      color: white;
-      text-decoration: none;
-    }
-    .voltar-link:hover {
-      background-color: #004d80;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #ddd;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Portal de Cursos</h1>
-    <nav>
-      <ul>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="cursos">
-      <h2>Cursos Disponíveis</h2>
-      <ul class="curso-lista">
-        <li><a href="#curso1">Introdução ao HTML e CSS</a></li>
-        <li><a href="#curso2">JavaScript para Iniciantes</a></li>
-        <li><a href="#curso3">React Básico</a></li>
-      </ul>
-    </section>
-
-    <section id="curso1" class="secao-curso">
-      <div class="detalhe-curso">
-        <h3>Introdução ao HTML e CSS</h3>
-        <p><strong>Descrição:</strong> Aprenda os fundamentos de HTML5 e CSS3 para criar páginas web.</p>
-        <p><strong>Duração:</strong> 10h</p>
-        <p><strong>Instrutor:</strong> João Silva</p>
-        <a href="#cursos" class="voltar-link">Voltar à lista de cursos</a>
-      </div>
-    </section>
-
-    <section id="curso2" class="secao-curso">
-      <div class="detalhe-curso">
-        <h3>JavaScript para Iniciantes</h3>
-        <p><strong>Descrição:</strong> Curso básico de JavaScript: variáveis, funções, DOM e eventos.</p>
-        <p><strong>Duração:</strong> 8h</p>
-        <p><strong>Instrutor:</strong> Maria Oliveira</p>
-        <a href="#cursos" class="voltar-link">Voltar à lista de cursos</a>
-      </div>
-    </section>
-
-    <section id="curso3" class="secao-curso">
-      <div class="detalhe-curso">
-        <h3>React Básico</h3>
-        <p><strong>Descrição:</strong> Introdução ao React: componentes, props, estado e ciclo de vida.</p>
-        <p><strong>Duração:</strong> 12h</p>
-        <p><strong>Instrutor:</strong> Carlos Santos</p>
-        <a href="#cursos" class="voltar-link">Voltar à lista de cursos</a>
-      </div>
-    </section>
-
-    <section id="sobre">
-      <h2>Sobre Nós</h2>
-      <p>Somos uma plataforma fictícia de cursos online construída apenas com HTML (e estilos embutidos).</p>
-    </section>
-
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Email: contato@meusite.com.br</p>
-      <p>Telefone:(44) 1234‑5678</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Portal de Cursos</p>
-  </footer>
+  <!-- Rolagem Suave com JS (caso scroll-behavior falhe em alguns browsers) -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <form action="enviar_contato.php" method="post">
 
 </body>
 </html>
-
-<section id="contato" class="contato">
-    <h2>Contato</h2>
-    <form action="enviar_contato.php" method="post">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-  
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-  
-      <button type="submit">Enviar</button>
-    </form>
-  
-    <div class="info-contato">
-      <p><strong>Telefone:</strong> (00) 1234-5678</p>
-      <p><strong>Email:</strong> contato@minhaescola.com</p>
-      <p><strong>Endereço:</strong> Rua da Educação, 123 - Cidade/UF</p>
-    </div>
-  </section>
