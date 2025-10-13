@@ -3,116 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Escola Cívico-Militar Duque de Caxias - Cursos de Desenvolvimento de Sistemas e Tecnologia">
-    <title>Escola Cívico-Militar Duque de Caxias</title>
-    <style>
-        /* Reset de estilo básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #004d2c;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-        }
-
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-
-        .cta-btn {
-            background-color: #e67e22;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        .cta-btn:hover {
-            background-color: #d35400;
-        }
-
-        .section {
-            margin: 40px 0;
-        }
-
-        .section h2 {
-            font-size: 2rem;
-            color: #004d2c;
-            margin-bottom: 20px;
-        }
-
-        .card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .card h3 {
-            color: #333;
-        }
-
-        .card p {
-            font-size: 1rem;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer a {
-            color: #e67e22;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-    </style>
+    <meta name="description" content="Escola Cívico‑Militar Duque de Caxias - Cursos de Desenvolvimento de Sistemas e Automação Industrial">
+    <title>Escola Cívico‑Militar Duque de Caxias</title>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1>Escola Cívico-Militar Duque de Caxias</h1>
+        <h1>Escola Cívico‑Militar Duque de Caxias</h1>
         <p>Transformando futuros com tecnologia e cidadania</p>
     </div>
 </header>
 
 <main class="container">
-    <!-- Seção de cursos -->
+    <!-- Curso de Desenvolvimento de Sistemas -->
     <section class="section">
         <h2>Cursos de Desenvolvimento de Sistemas</h2>
         <div class="card">
@@ -124,20 +30,60 @@
                 <li>Desenvolvimento Front-End e Back-End</li>
                 <li>Segurança de Sistemas</li>
             </ul>
-            <a href="#" class="cta-btn">Saiba mais</a>
+            <button class="cta-btn" data-popup="popup-sistemas">Saiba mais</button>
         </div>
     </section>
 
-    <!-- Seção sobre a escola -->
+    <!-- Curso de Automação Industrial -->
     <section class="section">
-        <h2>Sobre a Escola</h2>
+        <h2>Cursos de Automação Industrial</h2>
+        <div class="card">
+            <h3>Curso Técnico em Automação Industrial</h3>
+            <p>O curso de Automação Industrial oferece uma formação de ponta para atuar em processos industriais, controle automático, sistemas de sensores e atuadores, além de integração de sistemas de controle e robótica.</p>
+            <ul>
+                <li>Sistemas de Controle Automático</li>
+                <li>Redes Industriais</li>
+                <li>Instrumentação e Sensores</li>
+                <li>Programação de CLPs (Controladores Lógicos Programáveis)</li>
+                <li>Robótica Industrial</li>
+            </ul>
+            <button class="cta-btn" data-popup="popup-automacao">Saiba mais</button>
+        </div>
+    </section>
+
+    <!-- Seção "Sobre a Escola" -->
+    <section id="sobre" class="section">
+        <h2>Sobre a Escola Cívico‑Militar Duque de Caxias</h2>
         <div class="card">
             <h3>História e Missão</h3>
-            <p>A Escola Cívico-Militar Duque de Caxias foi fundada com o objetivo de oferecer um ensino de qualidade, com ênfase na formação técnica e cívica. Nosso compromisso é formar cidadãos preparados para o mercado de trabalho e para a vida em sociedade.</p>
+            <p>A <strong>Escola Cívico‑Militar Duque de Caxias</strong> foi fundada com o objetivo de oferecer um ensino de qualidade que combina formação técnica, cidadania e princípios éticos, inspirados na figura do Marechal Duque de Caxias, um símbolo de liderança e dever cívico no Brasil.</p>
+            <p>A missão da escola é formar jovens capacitados para o mercado de trabalho e cidadãos comprometidos com a sociedade, priorizando a excelência no ensino e o desenvolvimento integral de cada aluno.</p>
+            
+            <h3>Modelo Cívico-Militar</h3>
+            <p>O modelo cívico-militar da escola busca integrar a formação acadêmica com o desenvolvimento de valores como respeito, disciplina e responsabilidade. A presença militar no gerenciamento escolar contribui para um ambiente mais seguro, organizado e focado no aprendizado.</p>
+
+            <h3>Infraestrutura</h3>
+            <p>A escola possui uma infraestrutura moderna, equipada com laboratórios de informática, salas de aula com tecnologia de ponta, áreas para prática de esportes e recreação, garantindo um ambiente propício ao aprendizado e à formação de qualidade.</p>
+
+            <h3>Cursos Oferecidos</h3>
+            <p>Oferecemos cursos técnicos voltados para áreas em alta no mercado de trabalho, como:</p>
+            <ul>
+                <li><strong>Técnico em Desenvolvimento de Sistemas:</strong> Formação completa para atuar na criação e gestão de sistemas e software.</li>
+                <li><strong>Técnico em Automação Industrial:</strong> Capacitação para trabalhar com controle de sistemas automatizados e robótica industrial.</li>
+            </ul>
+
+            <h3>Valores Cívicos e Sociais</h3>
+            <p>Além da formação técnica, a escola também tem o compromisso de formar cidadãos conscientes, promovendo ações que incentivem a responsabilidade social, a ética e o trabalho em equipe.</p>
+
+            <h3>Apoio ao Estudo</h3>
+            <p>A escola oferece suporte pedagógico e psicológico aos alunos, garantindo que cada um tenha as ferramentas necessárias para atingir seu potencial máximo.</p>
+
+            <h3>Parcerias com Empresas</h3>
+            <p>Buscamos sempre parcerias com empresas e indústrias locais para garantir que nossos alunos tenham acesso a estágios e oportunidades de emprego, conectando o aprendizado à prática profissional.</p>
         </div>
     </section>
 
-    <!-- Seção de contato -->
+    <!-- Inscrições e Contato -->
     <section class="section">
         <h2>Inscrições e Contato</h2>
         <div class="card">
@@ -148,9 +94,43 @@
     </section>
 </main>
 
+<!-- Pop-ups de detalhe dos cursos -->
+<div id="popup-sistemas" class="popup">
+    <div class="popup-content">
+        <button class="close-btn" data-close="popup-sistemas">Fechar</button>
+        <h2>Detalhes do Curso de Desenvolvimento de Sistemas</h2>
+        <p>O curso Técnico em Desenvolvimento de Sistemas oferece uma formação completa que inclui:</p>
+        <ul>
+            <li>Teoria da programação e algoritmos</li>
+            <li>Criação de websites dinâmicos</li>
+            <li>Integração com banco de dados</li>
+            <li>Práticas de segurança e manutenção de sistemas</li>
+        </ul>
+        <p>Ao final do curso, o aluno estará preparado para atuar em empresas de tecnologia, startups e até mesmo em seu próprio negócio.</p>
+    </div>
+</div>
+
+<div id="popup-automacao" class="popup">
+    <div class="popup-content">
+        <button class="close-btn" data-close="popup-automacao">Fechar</button>
+        <h2>Detalhes do Curso de Automação Industrial</h2>
+        <p>O curso Técnico em Automação Industrial capacita os alunos para atuar em setores de automação, robótica e controle industrial, com tópicos como:</p>
+        <ul>
+            <li>Instalação e configuração de sistemas automatizados</li>
+            <li>Programação e manutenção de CLPs</li>
+            <li>Integração de sensores e atuadores em processos industriais</li>
+            <li>Robótica aplicada à indústria</li>
+        </ul>
+        <p>Este curso prepara o aluno para trabalhar em indústrias de automação, como na indústria automobilística, de alimentos e em processos de fabricação automatizados.</p>
+    </div>
+</div>
+
 <footer>
-    <p>&copy; 2025 Escola Cívico-Militar Duque de Caxias. Todos os direitos reservados. <br> <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    <p>&copy; 2025 Escola Cívico‑Militar Duque de Caxias. Todos os direitos reservados. <br>
+    <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
 </footer>
 
+<!-- Script JavaScript vinculado -->
+<script src="scripts.js"></script>
 </body>
 </html>
