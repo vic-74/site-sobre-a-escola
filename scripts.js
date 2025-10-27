@@ -1,3 +1,14 @@
+// Validação simples e alerta de envio
+document.getElementById('contato-form')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+    this.reset();
+});
+document.getElementById('contato-form')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+    this.reset();
+});
 document.addEventListener("DOMContentLoaded", function() {
     // Seleciona todos os botões com data-popup
     const btns = document.querySelectorAll("[data-popup]");

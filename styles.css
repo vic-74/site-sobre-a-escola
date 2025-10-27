@@ -1,0 +1,271 @@
+/* ================================
+   RESET BÁSICO
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   ESTILO GERAL DA PÁGINA
+================================ */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ================================
+   CABEÇALHO
+================================ */
+header {
+    background: linear-gradient(135deg, #004d2c, #00693d); /* tons de verde institucional */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ================================
+   SEÇÕES E CARTÕES
+================================ */
+.section {
+    margin: 3rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    color: #004d2c;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.card h3 {
+    color: #004d2c;
+    margin-top: 0;
+}
+
+.card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* ================================
+   BOTÕES
+================================ */
+.cta-btn {
+    display: inline-block;
+    background-color: #e67e22; /* laranja */
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #d35400;
+}
+
+/* ================================
+   FORMULÁRIO DE CONTATO
+================================ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #004d2c;
+}
+
+input,
+select,
+textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fdfdfd;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.contato-info {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    border-top: 1px solid #eee;
+    padding-top: 1.2rem;
+}
+
+.contato-info a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.contato-info a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   POP-UPS (DETALHES DOS CURSOS)
+================================ */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.popup.hide {
+    animation: fadeOut 0.4s ease-in forwards;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 85%;
+    position: relative;
+}
+
+.popup-content h2 {
+    color: #004d2c;
+    margin-bottom: 15px;
+}
+
+.close-btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-btn:hover {
+    background-color: #d35400;
+}
+
+/* ================================
+   ANIMAÇÕES DE POP-UP
+================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+
+/* ================================
+   RODAPÉ
+================================ */
+footer {
+    background-color: #004d2c;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    input, select, textarea {
+        font-size: 0.95rem;
+    }
+}
