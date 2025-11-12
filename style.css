@@ -291,3 +291,167 @@ footer a:hover {
         display: block;
     }
 }
+/* ======== GERAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ======== HEADER ======== */
+header {
+    background-color: #002855;
+    color: white;
+    padding: 15px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-escola {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.header-text h1 {
+    font-size: 1.6em;
+}
+
+.header-text p {
+    font-size: 0.9em;
+    color: #dce3f0;
+}
+
+/* ======== NAV ======== */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+/* ======== MENU HAMBÚRGUER ======== */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+/* ======== SEÇÕES ======== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ======== BOTÃO VOLTAR AO TOPO ======== */
+#btn-topo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #002855;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+#btn-topo:hover {
+    background-color: #004aad;
+}
+
+#btn-topo.mostrar {
+    display: flex;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+        background-color: #001f3f;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .logo-area {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .header-text h1 {
+        font-size: 1.2em;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}

@@ -5,163 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Escola Cívico-Militar Duque de Caxias - Cursos de Desenvolvimento de Sistemas e Automação Industrial">
     <title>Escola Cívico-Militar Duque de Caxias</title>
-    <!-- Link para o CSS externo -->
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo-area">
-                <img src="./WhatsApp_Image_2023-05-12_at_16.58.31.jpeg" alt="Logo da Escola Cívico-Militar Duque de Caxias" class="logo-escola">
-                <div class="header-text">
-                    <h1>Escola Cívico-Militar Duque de Caxias</h1>
-                    <p>Transformando futuros com tecnologia e cidadania</p>
-                </div>
+<!-- Botão "Voltar ao Topo" -->
+<button id="btn-topo" title="Voltar ao topo">⬆</button>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo-area">
+            <img src="./WhatsApp_Image_2023-05-12_at_16.58.31.jpeg" alt="Logo da Escola Cívico-Militar Duque de Caxias" class="logo-escola">
+            <div class="header-text">
+                <h1>Escola Cívico-Militar Duque de Caxias</h1>
+                <p>Transformando futuros com tecnologia e cidadania</p>
             </div>
-    
-            <!-- Botão do menu hambúrguer (visível no celular) -->
-            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-    
-            <!-- Menu de navegação -->
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
 
-    <!-- Botão "Voltar ao Topo" -->
-    <button id="btn-topo" title="Voltar ao topo">⬆</button>
+        <!-- Botão do menu hambúrguer -->
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
 
-    <!-- Conteúdo principal -->
-    <main class="container">
+        <!-- Menu de navegação -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <!-- Curso de Desenvolvimento de Sistemas -->
-        <section class="section" id="cursos">
-            <h2>Cursos de Desenvolvimento de Sistemas</h2>
-            <div class="card">
-                <h3>Curso Técnico em Desenvolvimento de Sistemas</h3>
-                <p>O curso de Desenvolvimento de Sistemas oferece uma formação completa em tecnologia, preparando os alunos para atuar no mercado de trabalho com habilidades em programação, banco de dados e desenvolvimento web.</p>
-                <ul>
-                    <li>Análise de Sistemas</li>
-                    <li>Banco de Dados</li>
-                    <li>Desenvolvimento Front-End e Back-End</li>
-                    <li>Ciência da Computação</li>
-                    <li>Programação Mobile</li>
-                </ul>
-                <button class="cta-btn" data-popup="popup-sistemas">Saiba mais</button>
-            </div>
-        </section>
+<main class="container">
 
-        <!-- Curso de Automação Industrial -->
-        <section class="section">
-            <h2>Cursos de Automação Industrial</h2>
-            <div class="card">
-                <h3>Curso Técnico em Automação Industrial</h3>
-                <p>O curso de Automação Industrial oferece uma formação de ponta para atuar em processos industriais, controle automático, sistemas de sensores e atuadores, além de integração de sistemas de controle e robótica.</p>
-                <ul>
-                    <li>Sistemas de Controle Automático</li>
-                    <li>Redes Industriais</li>
-                    <li>Instrumentação e Sensores</li>
-                    <li>Programação de CLPs</li>
-                    <li>Robótica Industrial</li>
-                </ul>
-                <button class="cta-btn" data-popup="popup-automacao">Saiba mais</button>
-            </div>
-        </section>
+    <!-- Seção "Sobre a Escola" (mais detalhada) -->
+    <section id="sobre" class="section">
+        <h2>Sobre a Escola Cívico-Militar Duque de Caxias</h2>
+        <div class="card">
+            <h3>História e Fundação</h3>
+            <p>A <strong>Escola Cívico-Militar Duque de Caxias</strong> nasceu com a missão de formar cidadãos éticos, disciplinados e preparados para o futuro. Fundada em homenagem ao <em>Marechal Luís Alves de Lima e Silva — o Duque de Caxias</em>, símbolo de liderança e patriotismo, a escola integra ensino de qualidade com valores cívicos e morais.</p>
 
-        <!-- Seção Sobre -->
-        <section id="sobre" class="section">
-            <h2>Sobre a Escola Cívico-Militar Duque de Caxias</h2>
-            <div class="card">
-                <p>A <strong>Escola Cívico-Militar Duque de Caxias</strong> une excelência técnica com valores cívicos e morais, formando cidadãos preparados para o futuro.</p>
-                <p>Inspirada no legado do Duque de Caxias, a escola promove disciplina, ética, patriotismo e inovação em todos os seus cursos.</p>
-            </div>
-        </section>
+            <p>Desde sua fundação, a instituição é reconhecida por oferecer uma formação que combina tecnologia, responsabilidade social e valores humanos. Com foco no desenvolvimento integral dos alunos, a escola promove o equilíbrio entre excelência acadêmica e formação pessoal.</p>
 
-        <!-- Contato -->
-        <section class="section" id="contato">
-            <h2>Inscrições e Contato</h2>
-            <div class="card">
-                <form id="contato-form" action="https://formspree.io/f/mayzkajb" method="POST">
-                    <div class="form-group">
-                        <label for="nome">Nome completo:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="curso">Curso de interesse:</label>
-                        <select id="curso" name="curso" required>
-                            <option value="">Selecione uma opção</option>
-                            <option value="desenvolvimento">Desenvolvimento de Sistemas</option>
-                            <option value="automacao">Automação Industrial</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
-                    </div>
-                    <button type="submit" class="cta-btn">Enviar mensagem</button>
-                </form>
-                <p class="contato-info">
-                    📧 <a href="mailto:contato@escoladuquecaxias.com">contato@escoladuquecaxias.com</a><br>
-                    ☎️ (44) 3267-5488<br>
-                    📍 Rua Mal. Mascarenhas de Moraes, 925 - Jd. Alvorada, PR
-                </p>
-            </div>
-        </section>
+            <h3>Missão</h3>
+            <p>Proporcionar uma educação completa que forme profissionais qualificados e cidadãos conscientes, comprometidos com o bem comum, a ética e o respeito à pátria.</p>
 
-    </main>
+            <h3>Visão</h3>
+            <p>Ser referência nacional em ensino técnico e formação cívico-militar, destacando-se pela qualidade de ensino, disciplina e compromisso com o desenvolvimento do Brasil.</p>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Escola Cívico-Militar Duque de Caxias. Todos os direitos reservados. <br>
-        <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
-    </footer>
+            <h3>Valores Fundamentais</h3>
+            <ul>
+                <li><strong>Disciplina:</strong> pilar essencial para o sucesso e crescimento pessoal.</li>
+                <li><strong>Respeito:</strong> valorização das pessoas e do ambiente escolar.</li>
+                <li><strong>Ética:</strong> agir com integridade em todas as situações.</li>
+                <li><strong>Patriotismo:</strong> amor e dedicação à nação.</li>
+                <li><strong>Excelência:</strong> busca contínua pelo aprimoramento e conhecimento.</li>
+                <li><strong>Trabalho em equipe:</strong> cooperação para alcançar objetivos comuns.</li>
+            </ul>
 
-    <!-- Script JavaScript -->
-    <script>
-        // ===== MENU RESPONSIVO =====
-        document.addEventListener("DOMContentLoaded", () => {
-            const toggleBtn = document.querySelector(".menu-toggle");
-            const navbar = document.querySelector(".navbar");
+            <h3>Estrutura e Infraestrutura</h3>
+            <ul>
+                <li>Laboratórios de informática e robótica com tecnologia atualizada.</li>
+                <li>Salas de aula equipadas com projetores e internet de alta velocidade.</li>
+                <li>Biblioteca física e digital com acervo técnico e literário.</li>
+                <li>Quadras poliesportivas e área de convivência.</li>
+                <li>Ambiente monitorado e seguro, ideal para o aprendizado.</li>
+            </ul>
 
-            toggleBtn.addEventListener("click", () => {
-                navbar.classList.toggle("active");
-            });
+            <h3>Modelo Cívico-Militar</h3>
+            <p>O modelo de ensino cívico-militar combina disciplina e excelência acadêmica. A presença de militares da reserva na gestão escolar garante organização, segurança e respeito, enquanto os educadores civis promovem o desenvolvimento intelectual e humano.</p>
 
-            document.querySelectorAll(".navbar a").forEach(link => {
-                link.addEventListener("click", () => {
-                    navbar.classList.remove("active");
-                });
-            });
-        });
+            <h3>Compromisso Social e Parcerias</h3>
+            <p>A escola realiza projetos sociais, ações solidárias e programas de estágio técnico, em parceria com empresas e órgãos públicos. Isso garante que o aluno saia preparado para o mercado de trabalho e consciente do seu papel na sociedade.</p>
 
-        // ===== BOTÃO VOLTAR AO TOPO =====
-        const btnTopo = document.getElementById("btn-topo");
+            <h3>Apoio ao Aluno</h3>
+            <p>Oferecemos suporte pedagógico, psicológico e orientação profissional, acompanhando o desenvolvimento individual de cada aluno e ajudando-os a planejar o futuro com confiança.</p>
+        </div>
+    </section>
 
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                btnTopo.classList.add("mostrar");
-            } else {
-                btnTopo.classList.remove("mostrar");
-            }
-        });
+    <!-- Cursos -->
+    <section id="cursos" class="section">
+        <h2>Nossos Cursos</h2>
+        <div class="card">
+            <h3>Curso Técnico em Desenvolvimento de Sistemas</h3>
+            <p>Forma profissionais para atuarem na área de tecnologia, com foco em programação, banco de dados, web e mobile.</p>
+            <button class="cta-btn" data-popup="popup-sistemas">Saiba mais</button>
+        </div>
 
-        btnTopo.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    </script>
+        <div class="card">
+            <h3>Curso Técnico em Automação Industrial</h3>
+            <p>Capacita alunos para atuar em processos industriais, com conhecimentos em robótica, CLPs e sensores automatizados.</p>
+            <button class="cta-btn" data-popup="popup-automacao">Saiba mais</button>
+        </div>
+    </section>
 
+    <!-- Contato -->
+    <section id="contato" class="section">
+        <h2>Contato e Inscrições</h2>
+        <div class="card">
+            <form id="contato-form" action="https://formspree.io/f/mayzkajb" method="POST">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="curso">Curso de interesse:</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecione...</option>
+                    <option value="desenvolvimento">Desenvolvimento de Sistemas</option>
+                    <option value="automacao">Automação Industrial</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit" class="cta-btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Escola Cívico-Militar Duque de Caxias. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Script -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    toggleBtn.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+
+    const btnTopo = document.getElementById("btn-topo");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            btnTopo.classList.add("mostrar");
+        } else {
+            btnTopo.classList.remove("mostrar");
+        }
+    });
+
+    btnTopo.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+</script>
 </body>
 </html>
