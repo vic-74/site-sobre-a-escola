@@ -54,3 +54,22 @@ function closePopup(popupId) {
         popup.style.display = "none";
     }
 }
+// ===== BOTÃO VOLTAR AO TOPO =====
+const btnTopo = document.getElementById("btn-topo");
+
+// Mostrar o botão quando rolar para baixo
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        btnTopo.classList.add("mostrar");
+    } else {
+        btnTopo.classList.remove("mostrar");
+    }
+});
+
+// Rolar suavemente até o topo quando clicado
+btnTopo.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

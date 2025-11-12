@@ -269,3 +269,234 @@ footer a:hover {
         font-size: 0.95rem;
     }
 }
+/* ====== Estilo do Cabeçalho ====== */
+header {
+    background-color: #002855; /* azul escuro militar */
+    color: white;
+    padding: 20px 0;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* garante que se ajuste em telas menores */
+    gap: 20px;
+}
+
+.logo-escola {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.header-text {
+    text-align: left;
+}
+
+.header-text h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-escola {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* ====== ESTILO DO CABEÇALHO ====== */
+header {
+    background-color: #002855; /* azul escuro militar */
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-escola {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.header-text h1 {
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 1em;
+    margin-top: 5px;
+    color: #dbe7ff;
+}
+
+/* ====== MENU DE NAVEGAÇÃO ====== */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700; /* dourado */
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 800px) {
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-area {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* ====== ESTILO DO CABEÇALHO ====== */
+header {
+    background-color: #002855; /* azul militar */
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-escola {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.header-text h1 {
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 1em;
+    margin-top: 5px;
+    color: #dbe7ff;
+}
+
+/* ====== MENU DE NAVEGAÇÃO ====== */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700; /* dourado */
+}
+
+/* ====== BOTÃO HAMBÚRGUER ====== */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 850px) {
+    .header-flex {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
+        background-color: #003580;
+        margin-top: 10px;
+    }
+
+    /* Exibe o menu quando ativo */
+    .navbar.active {
+        display: block;
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}

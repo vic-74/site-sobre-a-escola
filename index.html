@@ -8,164 +8,160 @@
     <!-- Link para o CSS externo -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <h1>Escola Cívico-Militar Duque de Caxias</h1>
-        <p>Transformando futuros com tecnologia e cidadania</p>
-    </div>
-</header>
-
-<main class="container">
-    <!-- Curso de Desenvolvimento de Sistemas -->
-    <section class="section">
-        <h2>Cursos de Desenvolvimento de Sistemas</h2>
-        <div class="card">
-            <h3>Curso Técnico em Desenvolvimento de Sistemas</h3>
-            <p>O curso de Desenvolvimento de Sistemas oferece uma formação completa em tecnologia, preparando os alunos para atuar no mercado de trabalho com habilidades em programação, banco de dados e desenvolvimento web.</p>
-            <ul>
-                <li>Analise De Sistemas</li>
-                <li>Banco de Dados</li>
-                <li>Desenvolvimento Front-End e Back-End</li>
-                <li>Ciências Da Computação</li>
-                <li>Progamação Mobile</li>
-            </ul>
-            <button class="cta-btn" data-popup="popup-sistemas">Saiba mais</button>
-        </div>
-    </section>
-
-    <!-- Curso de Automação Industrial -->
-    <section class="section">
-        <h2>Cursos de Automação Industrial</h2>
-        <div class="card">
-            <h3>Curso Técnico em Automação Industrial</h3>
-            <p>O curso de Automação Industrial oferece uma formação de ponta para atuar em processos industriais, controle automático, sistemas de sensores e atuadores, além de integração de sistemas de controle e robótica.</p>
-            <ul>
-                <li>Sistemas de Controle Automático</li>
-                <li>Redes Industriais</li>
-                <li>Instrumentação e Sensores</li>
-                <li>Programação de CLPs (Controladores Lógicos Programáveis)</li>
-                <li>Robótica Industrial</li>
-            </ul>
-            <button class="cta-btn" data-popup="popup-automacao">Saiba mais</button>
-        </div>
-    </section>
-
-    <!-- Seção "Sobre a Escola" -->
-    <section id="sobre" class="section">
-        <h2>Sobre a Escola Cívico-Militar Duque de Caxias</h2>
-        <div class="card">
-            <h3>História e Missão</h3>
-            <p>A <strong>Escola Cívico-Militar Duque de Caxias</strong> foi fundada com o objetivo de oferecer um ensino de qualidade que combina formação técnica, cidadania e princípios éticos, inspirados na figura do Marechal Duque de Caxias, um símbolo de liderança e dever cívico no Brasil.</p>
-            <p>A missão da escola é formar jovens capacitados para o mercado de trabalho e cidadãos comprometidos com a sociedade, priorizando a excelência no ensino e o desenvolvimento integral de cada aluno.</p>
-            
-            <h3>Modelo Cívico-Militar</h3>
-            <p>O modelo cívico-militar da escola busca integrar a formação acadêmica com o desenvolvimento de valores como respeito, disciplina e responsabilidade. A presença militar no gerenciamento escolar contribui para um ambiente mais seguro, organizado e focado no aprendizado.</p>
-
-            <h3>Infraestrutura</h3>
-            <p>A escola possui uma infraestrutura moderna, equipada com laboratórios de informática, salas de aula com tecnologia de ponta, áreas para prática de esportes e recreação, garantindo um ambiente propício ao aprendizado e à formação de qualidade.</p>
-
-            <h3>Cursos Oferecidos</h3>
-            <p>Oferecemos cursos técnicos voltados para áreas em alta no mercado de trabalho, como:</p>
-            <ul>
-                <li><strong>Técnico em Desenvolvimento de Sistemas:</strong> Formação completa para atuar na criação e gestão de sistemas e software.</li>
-                <li><strong>Técnico em Automação Industrial:</strong> Capacitação para trabalhar com controle de sistemas automatizados e robótica industrial.</li>
-            </ul>
-
-            <h3>Valores Cívicos e Sociais</h3>
-            <p>Além da formação técnica, a escola também tem o compromisso de formar cidadãos conscientes, promovendo ações que incentivem a responsabilidade social, a ética e o trabalho em equipe.</p>
-
-            <h3>Apoio ao Estudo</h3>
-            <p>A escola oferece suporte pedagógico e psicológico aos alunos, garantindo que cada um tenha as ferramentas necessárias para atingir seu potencial máximo.</p>
-
-            <h3>Parcerias com Empresas</h3>
-            <p>Buscamos sempre parcerias com empresas e indústrias locais para garantir que nossos alunos tenham acesso a estágios e oportunidades de emprego, conectando o aprendizado à prática profissional.</p>
-        </div>
-    </section>
-
-    <!-- Inscrições e Contato -->
-    <section class="section" id="contato">
-        <h2>Inscrições e Contato</h2>
-        <div class="card">
-            <h3>Entre em contato para mais informações ou inscreva-se!</h3>
-            <p>Preencha o formulário abaixo e nossa equipe retornará o contato com mais detalhes sobre os cursos e o processo de inscrição.</p>
-
-            <form id="contato-form" action="https://formspree.io/f/mayzkajb" method="POST">
-                <div class="form-group">
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo-area">
+                <img src="./WhatsApp_Image_2023-05-12_at_16.58.31.jpeg" alt="Logo da Escola Cívico-Militar Duque de Caxias" class="logo-escola">
+                <div class="header-text">
+                    <h1>Escola Cívico-Militar Duque de Caxias</h1>
+                    <p>Transformando futuros com tecnologia e cidadania</p>
                 </div>
-
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="curso">Curso de interesse:</label>
-                    <select id="curso" name="curso" required>
-                        <option value="">Selecione uma opção</option>
-                        <option value="desenvolvimento">Técnico em Desenvolvimento de Sistemas</option>
-                        <option value="automacao">Técnico em Automação Industrial</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
-                </div>
-
-                <button type="submit" class="cta-btn">Enviar mensagem</button>
-            </form>
-
-            <p class="contato-info">
-                📧 E-mail: <a href="mailto:contato@escoladuquecaxias.com">contato@escoladuquecaxias.com</a><br>
-                Instagram: @c.eduquedecaxias
-                ☎️ Telefone: (44) 3267-5488<br>
-                📍 Endereço: Rua mal mascarenhas de moraes, 925 J.Alvorada\PR
-            </p>
+            </div>
+    
+            <!-- Botão do menu hambúrguer (visível no celular) -->
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    
+            <!-- Menu de navegação -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-</main>
+    </header>
 
-<!-- Pop-ups de detalhe dos cursos -->
-<div id="popup-sistemas" class="popup">
-    <div class="popup-content">
-        <button class="close-btn" data-close="popup-sistemas">Fechar</button>
-        <h2>Detalhes do Curso de Desenvolvimento de Sistemas</h2>
-        <p>O curso Técnico em Desenvolvimento de Sistemas oferece uma formação completa que inclui:</p>
-        <ul>
-            <li>Teoria da programação e algoritmos</li>
-            <li>Criação de websites dinâmicos</li>
-            <li>Integração com banco de dados</li>
-            <li>Práticas de segurança e manutenção de sistemas</li>
-        </ul>
-        <p>Ao final do curso, o aluno estará preparado para atuar em empresas de tecnologia, startups e até mesmo em seu próprio negócio.</p>
-    </div>
-</div>
+    <!-- Botão "Voltar ao Topo" -->
+    <button id="btn-topo" title="Voltar ao topo">⬆</button>
 
-<div id="popup-automacao" class="popup">
-    <div class="popup-content">
-        <button class="close-btn" data-close="popup-automacao">Fechar</button>
-        <h2>Detalhes do Curso de Automação Industrial</h2>
-        <p>O curso Técnico em Automação Industrial capacita os alunos para atuar em setores de automação, robótica e controle industrial, com tópicos como:</p>
-        <ul>
-            <li>Instalação e configuração de sistemas automatizados</li>
-            <li>Programação e manutenção de CLPs</li>
-            <li>Integração de sensores e atuadores em processos industriais</li>
-            <li>Robótica aplicada à indústria</li>
-        </ul>
-        <p>Este curso prepara o aluno para trabalhar em indústrias de automação, como na indústria automobilística, de alimentos e em processos de fabricação automatizados.</p>
-    </div>
-</div>
+    <!-- Conteúdo principal -->
+    <main class="container">
 
-<footer>
-    <p>&copy; 2025 Escola Cívico-Militar Duque de Caxias. Todos os direitos reservados. <br>
-    <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
-</footer>
+        <!-- Curso de Desenvolvimento de Sistemas -->
+        <section class="section" id="cursos">
+            <h2>Cursos de Desenvolvimento de Sistemas</h2>
+            <div class="card">
+                <h3>Curso Técnico em Desenvolvimento de Sistemas</h3>
+                <p>O curso de Desenvolvimento de Sistemas oferece uma formação completa em tecnologia, preparando os alunos para atuar no mercado de trabalho com habilidades em programação, banco de dados e desenvolvimento web.</p>
+                <ul>
+                    <li>Análise de Sistemas</li>
+                    <li>Banco de Dados</li>
+                    <li>Desenvolvimento Front-End e Back-End</li>
+                    <li>Ciência da Computação</li>
+                    <li>Programação Mobile</li>
+                </ul>
+                <button class="cta-btn" data-popup="popup-sistemas">Saiba mais</button>
+            </div>
+        </section>
 
-<!-- Script JavaScript vinculado -->
-<script src="scripts.js"></script>
+        <!-- Curso de Automação Industrial -->
+        <section class="section">
+            <h2>Cursos de Automação Industrial</h2>
+            <div class="card">
+                <h3>Curso Técnico em Automação Industrial</h3>
+                <p>O curso de Automação Industrial oferece uma formação de ponta para atuar em processos industriais, controle automático, sistemas de sensores e atuadores, além de integração de sistemas de controle e robótica.</p>
+                <ul>
+                    <li>Sistemas de Controle Automático</li>
+                    <li>Redes Industriais</li>
+                    <li>Instrumentação e Sensores</li>
+                    <li>Programação de CLPs</li>
+                    <li>Robótica Industrial</li>
+                </ul>
+                <button class="cta-btn" data-popup="popup-automacao">Saiba mais</button>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section">
+            <h2>Sobre a Escola Cívico-Militar Duque de Caxias</h2>
+            <div class="card">
+                <p>A <strong>Escola Cívico-Militar Duque de Caxias</strong> une excelência técnica com valores cívicos e morais, formando cidadãos preparados para o futuro.</p>
+                <p>Inspirada no legado do Duque de Caxias, a escola promove disciplina, ética, patriotismo e inovação em todos os seus cursos.</p>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="section" id="contato">
+            <h2>Inscrições e Contato</h2>
+            <div class="card">
+                <form id="contato-form" action="https://formspree.io/f/mayzkajb" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="curso">Curso de interesse:</label>
+                        <select id="curso" name="curso" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="desenvolvimento">Desenvolvimento de Sistemas</option>
+                            <option value="automacao">Automação Industrial</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn">Enviar mensagem</button>
+                </form>
+                <p class="contato-info">
+                    📧 <a href="mailto:contato@escoladuquecaxias.com">contato@escoladuquecaxias.com</a><br>
+                    ☎️ (44) 3267-5488<br>
+                    📍 Rua Mal. Mascarenhas de Moraes, 925 - Jd. Alvorada, PR
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Escola Cívico-Militar Duque de Caxias. Todos os direitos reservados. <br>
+        <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script>
+        // ===== MENU RESPONSIVO =====
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleBtn = document.querySelector(".menu-toggle");
+            const navbar = document.querySelector(".navbar");
+
+            toggleBtn.addEventListener("click", () => {
+                navbar.classList.toggle("active");
+            });
+
+            document.querySelectorAll(".navbar a").forEach(link => {
+                link.addEventListener("click", () => {
+                    navbar.classList.remove("active");
+                });
+            });
+        });
+
+        // ===== BOTÃO VOLTAR AO TOPO =====
+        const btnTopo = document.getElementById("btn-topo");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                btnTopo.classList.add("mostrar");
+            } else {
+                btnTopo.classList.remove("mostrar");
+            }
+        });
+
+        btnTopo.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
 </body>
 </html>

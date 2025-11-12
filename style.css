@@ -177,3 +177,117 @@ footer a:hover {
 .close-btn:hover {
     background-color: #d35400;
 }
+/* ====== BOTÃO VOLTAR AO TOPO ====== */
+#btn-topo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #002855; /* Azul militar */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none; /* escondido por padrão */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+#btn-topo:hover {
+    background-color: #004aad; /* tom mais claro */
+    transform: scale(1.1);
+}
+
+/* Animação de fade-in/out */
+#btn-topo.mostrar {
+    display: flex;
+    animation: aparecer 0.4s ease forwards;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* ====== BOTÃO VOLTAR AO TOPO ====== */
+#btn-topo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #002855;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+#btn-topo:hover {
+    background-color: #004aad;
+    transform: scale(1.1);
+}
+
+#btn-topo.mostrar {
+    display: flex;
+    animation: aparecer 0.4s ease forwards;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== MENU RESPONSIVO ====== */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #002855;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #002855;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 10px 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        display: block;
+    }
+}
