@@ -500,3 +500,46 @@ header {
         to { opacity: 1; transform: translateY(0); }
     }
 }
+/* Garante que a imagem nunca ultrapasse a largura do seu contêiner */
+.logo-area img {
+    max-width: 100%;
+    /* Mantém a proporção original da imagem (importante!) */
+    height: auto; 
+    /* Adiciona um pequeno espaçamento abaixo da imagem */
+    margin-bottom: 10px;
+}
+
+/* Se você quiser definir um tamanho máximo específico, por exemplo, 100px de altura */
+.logo-area img {
+    max-height: 100px;
+    width: auto;
+}
+
+/* Estilo para a área do cabeçalho, para alinhar o logo e o texto lado a lado */
+.header-flex {
+    display: flex; /* Cria um layout flexível */
+    align-items: center; /* Alinha verticalmente o logo e o texto */
+    gap: 20px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+/* Estilo adicional para o botão de voltar ao topo (btn-topo) */
+#btn-topo {
+    display: none; /* Esconde o botão por padrão (será mostrado com JavaScript) */
+    position: fixed; /* Posição fixa na tela */
+    bottom: 20px; /* 20px do fundo */
+    right: 20px; /* 20px da direita */
+    z-index: 99; /* Fica acima de outros elementos */
+    border: none;
+    outline: none;
+    background-color: #004085; /* Cor da escola (exemplo) */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%; /* Botão redondo */
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#btn-topo:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
